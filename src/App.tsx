@@ -2,7 +2,7 @@ import React from 'react';
 import "../src/styles/index.scss"
 import Button from "./components/Button/Button";
 import TreeGraph from "./components/TreeGraph/TreeGraph";
-
+import Border from "./components/Border/Border";
 function App() {
 
   const data = {
@@ -102,8 +102,7 @@ function App() {
   return (
     <div className="App" style={{width: '100vw', height: '100vh', backgroundColor: '#444'}}>
       <div style={{width: '800px', height: '500px', position:'absolute',top:'20%',left:'20%'}}>
-        <Button type={"dataV-animation2"}>按钮</Button>
-        <Button type={"dataV-animation1"}>按钮</Button>
+        <Border style={{width:'400px',height:'300px'}}>你好啊 </Border>
       </div>
     </div>
   );

@@ -8,10 +8,10 @@
     "data-visualization",
     "React"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/edc-hui/data-visualization.git",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/edc-hui/data-visualization.git"
   },
   "files": [
     "dist"
