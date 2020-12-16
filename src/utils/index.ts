@@ -5,3 +5,10 @@ export const uuid = () => {
 
   return ("dataV" + S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
 }
+
+
+export const getPathLength = (path: string): number => {
+  const pathDom = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  pathDom.setAttribute('d', path);
+  return pathDom.getTotalLength();
+};

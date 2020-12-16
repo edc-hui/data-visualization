@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      background-color: #333;
+    }
+
+    #div1 {
+      background-color: #fff;
+      width: 500px;
+      height: 500px;
+    }
+
+    #div1 > svg #line {
+      stroke-dasharray: 200;
+      stroke-dashoffset: 200;
+      animation: lineMove 2s linear infinite alternate;
+    }
+
+    @keyframes lineMove {
+      /*0% {*/
+      /*  stroke-dashoffset: 150;*/
+      /*}*/
+
+      /*50% {*/
+      /*  stroke-dashoffset: 50;*/
+      /*}*/
+
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="div1">
+  <svg width="230px" height="108px" viewBox="0 0 230 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="编组">
+        <rect id="矩形" fill="#F63535" x="0" y="0" width="110" height="49"></rect>
+        <rect id="矩形备份" fill="#27DC1A" x="65" y="24" width="110" height="49"></rect>
+        <rect id="矩形备份-2" fill="#6034F0" x="120" y="59" width="110" height="49"></rect>
+      </g>
+    </g>
+  </svg>
+</div>
+
+</body>
+</html>
